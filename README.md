@@ -3,20 +3,22 @@
 ## How to approach this lab:
 
 **NOTE:** Before coming to this lab - it is compulsory to complete the lab on callbacks.
-This lab targets the idea of async and promises. This lab should be completed step by step - following all the instruction given below. 
+This lab targets the idea of async and promises. This lab should be completed step by step - following all the instruction given below.
 You need to solve this lab in the order given below:
 
 1. promise.js
 2. promise-async.js
 
-**NOTE:** There is only one ***html*** file, in this lab. So, you need to change the ***src***, in ***index.html*** file, in order to run a particular js file.
-For eg: 
-If I want to run callback.js file, then change the ***src="promise.js"*** to ***src="promise-async.js"*** .
+**NOTE:** There is only one **_html_** file, in this lab. So, you need to change the **_src_**, in **_index.html_** file, in order to run a particular js file.
+For eg:
+If I want to run callback.js file, then change the **_src="promise.js"_** to **_src="promise-async.js"_** .
 
-If you are stuck, go to ***help.md*** file and seek out the hints given.
+If you are stuck, go to **_help.md_** file and seek out the hints given.
 
 ## Starter Code:
+
 Each javascript file, consists of two variables:
+
 1. cookies - it is a list of objects, consisting of name of couple of cookies.
 2. newCookie - it stores the name of a new cookie.
 
@@ -36,14 +38,17 @@ inside the above function - use in built js function **_setTimeout()_** function
 create another function to create a cookie. In this function return a new object of `Promise`.
 
 ### Progression 4:
-inside the `Promise` -> call a callback function which takes two parameters --> 
+
+inside the `Promise` -> call a callback function which takes two parameters -->
+
 1. resolve
 2. reject
-use **_setTimeout()_** function inside the above callback function.
+   use **_setTimeout()_** function inside the above callback function.
 
 **NOTE:** You can use anonymous function for that callback function.
 
 ### Progression 5:
+
 inside setTimeOut function -> push **newcookie**, to your **cookies** list. keeping the time to be 2000.
 You can even handle errors or exceptions -- by using if else conditions inside this setTimeOut funciton.
 
@@ -51,6 +56,8 @@ You can even handle errors or exceptions -- by using if else conditions inside t
 
 call the function which creates cookies and use `.then` -> to call the function which gets all the cookies.
 check whether the third cookie, you added is being printed or not.
+
+https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/promisesCookiesTwo.png
 
 ## Instruction to promise-async.js :
 
@@ -61,5 +68,7 @@ Now, instead of using `.then` -> create an async function using `async` keyword.
 Inside this function -- first call the function which creates cookies --> use `await` keyword before this function.
 Then call the function which gets all the cookies.
 check whether - now the third cookie is being printed on your browser or not.
+
+https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/promisesCookies.png
 
 Happy Coding Kalvium❤️
